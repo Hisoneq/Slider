@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="container__navigation">
+            <a href="#" id="Admiral" class="nav-link active">Rostov-on-Don, Admiral</a>
+            <a href="#" id="Sochi" class="nav-link">Sochi Thieves</a>
+            <a href="#" id="Patriotic" class="nav-link">Rostov-on-Don Patriotic</a>
+        </nav>
+
+        <div class="content">
+            <section class="projects">
+                
+                <div class="projects__header">
+                    <h1 class="projects__title">Completed<br> projects</h1>
+                    <div class="projects__line"></div>
+                </div>
+                
+                <p class="projects__description">Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> market we have made happy more than 1000 families</p>
+                
+                <div class="projects__info">
+                    <div class="projects__column">
+                        <h2 class="projects__city">City:</h2>
+                        <p class="projects__city-info">Rostov-on-Don<br>LCD admiral</p>
+                        
+                        <h2 class="projects__apartment">Apartment area:</h2>
+                        <p class="projects__apartment-info">81 m²</p>
+                    </div>
+                    
+                    <div class="projects__column">
+                        <h2 class="projects__time">Repair time:</h2>
+                        <p class="projects__time-info">3.5 months</p>
+                        
+                        <h2 class="projects__cost">Repair Cost:</h2>
+                        <p class="projects__cost-info">Upon request</p>
+                    </div>
+                </div>
+            
+                <div class="projects__controls">
+                    <img src="/img/arrow.svg" alt="arrow" class="projects__arrow" id="firstArrow">
+                    <div class="projects__circles">
+                        <div class="projects__circle active" id="firstCircle"></div>
+                        <div class="projects__circle" id="secondCircle"></div>
+                        <div class="projects__circle" id="thirdCircle"></div>
+                    </div>
+                    <img src="/img/arrow.svg" alt="arrow" class="projects__arrow" id="secondArrow">
+                </div>
+            </section>
+        </div>
+
+        <div class="main-image">
+            <img src="/img/image1.png" alt="image1" id="dynamicImage">
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 75px 134.45px 80px 134.45px;
+    background-color: #131313;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 679px; 
+}
+
+.container__navigation {
+    grid-column: 1 / 3; 
+    display: flex;
+    justify-content: flex-end; 
+    gap: 60px;
+    margin-bottom: 53px;
+}
+
+.container__navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+}
+
+.container__navigation a.active {
+    color: #E3B873;
+}
+
+.container__navigation a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E3B873;
+    position: absolute;
+    bottom: -7px; 
+    left: 0;
+}
+
+.container__navigation a:last-child {
+    margin-right: 56px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    color: white;
+    font-family: 'Nunito Sans';
+}
+
+.projects__title {
+    display: flex;
+    font-family: 'Yeseva One';
+    color: #E3B873;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.projects__header {
+    display: flex;
+    align-items: center;
+}
+
+.projects__title {
+    display: flex;
+    font-family: 'Yeseva One';
+    color: #E3B873;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.projects__line {
+    width: 92px;
+    height: 1px;
+    background-color: #E3B873;
+}
+
+.projects__description {
+    display: flex;
+    padding-top: 34px;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 42px;
+}
+
+.projects__info {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.projects__column {
+    margin-right: 50px; 
+}
+
+.projects__column:last-child {
+    margin-right: 0; 
+}
+
+h2.projects__city,
+h2.projects__apartment,
+h2.projects__time,
+h2.projects__cost {
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+    padding-bottom: 9px;
+}
+
+p {
+    font-size: 13px; 
+}
+
+.projects__controls {
+    display: flex;
+    align-items: center;
+    margin: 120px 0 0 0; 
+}
+
+.projects__arrow {
+    max-width: 80px;
+    height: 30px;
+    fill: white;
+    cursor: pointer;
+}
+
+#secondArrow {
+    transform: rotate(180deg);
+    transform-origin: center; 
+}
+
+.projects__circles {
+    display: flex;
+    gap: 17.5px; 
+    padding: 0 30px;
+}
+
+.projects__circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+.projects__circle.active {
+    background-color: white; 
+}
+
+.main-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 679px;
+    height: auto; 
+}
+
+.projects__city-info {
+    padding-bottom: 34px;
+}
+
+.projects__time-info {
+    padding-bottom: 50px;
+}
+
+
+
