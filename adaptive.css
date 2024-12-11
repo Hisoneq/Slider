@@ -40,3 +40,105 @@
         max-width: 100%; 
     }
 }
+
+@media (max-width: 768px) {
+    .container__navigation {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .container__navigation a {
+        font-size: 13px; 
+    }
+
+    h2.projects__city,
+    h2.projects__apartment,
+    h2.projects__time,
+    h2.projects__cost {
+        font-size: 17px; 
+    }
+
+    h2 {
+        font-size: 17px; 
+        padding-bottom: 8px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+
+    .projects__description {
+        font-size: 13px; 
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__navigation {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .projects__header{
+        justify-content: center;
+    }
+
+    .projects__line{
+        display: none;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__navigation a {
+        font-size: 12px; 
+    }
+
+    .container__navigation a.active::after{
+        bottom: -5px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2.projects__city,
+    h2.projects__apartment,
+    h2.projects__time,
+    h2.projects__cost {
+        font-size: 16px; 
+    }
+
+    h2 {
+        font-size: 16px; 
+        padding-bottom: 7px;
+    }
+
+    p {
+        font-size: 12px; 
+    }
+
+    .projects__description {
+        font-size: 12px; 
+    }
+
+    .projects__time-info{
+        padding-bottom: 50px;
+    }
+
+    .projects__controls{
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .main-image{
+        justify-content: center;
+    }
+}
